@@ -56,8 +56,8 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   quote = "What grows slowly, grows to last."
 
 [legacy]
-  quote = "Waiwai nui ka pono (great is the value of righteousness)."
-  attribution = "Traditional Hawaiian proverb"
+  quote = "Hana pono (to act rightly, in good faith)."
+  attribution = "The way we build"
 
 [assessment]
   eyebrow = "Private Assessment"
