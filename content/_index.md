@@ -31,9 +31,9 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   body = "Wealth held is wealth cared for. We protect what has been built with the same discipline it took to build it."
 
 [[pillars]]
-  word = "Waiwai"
-  translation = "Wealth"
-  body = "Value, defined broadly: in resources, in relationships, and in the freedom to choose the path ahead."
+  word = "Aloha"
+  translation = "Love"
+  body = "The reason for the work. Every structure we build exists to protect the people and relationships that matter, not wealth for its own sake."
 
 [framework]
   eyebrow = "Our Framework"
