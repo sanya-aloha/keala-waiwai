@@ -5,7 +5,7 @@ enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term', 'rss']
 
 [params]
-  description = 'Keala Waiwai — a family enterprise built on legacy, stewardship, and prosperity.'
+  description = 'Keala Waiwai: private family office structuring, built on legacy, stewardship, and prosperity.'
   tagline = 'The Path of Prosperity'
   ogImage = '/images/og-cover.svg'
 
@@ -20,13 +20,13 @@ disableKinds = ['taxonomy', 'term', 'rss']
   weight = 20
 
 [[menu.main]]
-  name = 'Ventures'
-  url = '/#ventures'
+  name = 'Framework'
+  url = '/#framework'
   weight = 30
 
 [[menu.main]]
-  name = 'Contact'
-  url = '/#contact'
+  name = 'Assessment'
+  url = '/#assessment'
   weight = 40
 
 [minify]

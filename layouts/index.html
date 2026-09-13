@@ -2,11 +2,17 @@
 {{ $hero := .Params.hero }}
 {{ $story := .Params.story }}
 {{ $pillars := .Params.pillars }}
-{{ $ventures := .Params.ventures }}
+{{ $framework := .Params.framework }}
 {{ $legacy := .Params.legacy }}
-{{ $contact := .Params.contact }}
+{{ $assessment := .Params.assessment }}
 
 <section class="hero">
+  <div class="hero__botanical hero__botanical--fern" aria-hidden="true">
+    <svg width="220" height="460"><use href="#icon-fern"/></svg>
+  </div>
+  <div class="hero__botanical hero__botanical--kalo" aria-hidden="true">
+    <svg width="180" height="220"><use href="#icon-kalo"/></svg>
+  </div>
   <div class="hero__inner reveal">
     <p class="eyebrow eyebrow--light">{{ $hero.eyebrow }}</p>
     <h1 class="hero__headline">{{ $hero.headline }}</h1>
@@ -36,6 +42,7 @@
 
 <section class="pillars" id="pillars">
   <div class="pillars__inner">
+    <div class="sprig" aria-hidden="true"><svg width="26" height="52"><use href="#icon-fern"/></svg></div>
     <p class="eyebrow eyebrow--center">Our Foundation</p>
     <h2 class="section-title section-title--center">Four values. One path.</h2>
     <div class="pillars__grid">
@@ -50,15 +57,18 @@
   </div>
 </section>
 
-<section class="ventures" id="ventures">
-  <div class="ventures__inner">
-    <p class="eyebrow eyebrow--light">{{ $ventures.eyebrow }}</p>
-    <h2 class="section-title section-title--light">{{ $ventures.heading }}</h2>
-    <p class="body-lg body-lg--light">{{ $ventures.body }}</p>
-    <div class="ventures__grid">
-      {{ range $ventures.list }}
-      <div class="venture-card reveal">
-        <span class="venture-card__num" aria-hidden="true"></span>
+<section class="framework" id="framework">
+  <div class="framework__botanical" aria-hidden="true">
+    <svg width="150" height="180"><use href="#icon-lauhala"/></svg>
+  </div>
+  <div class="framework__inner">
+    <p class="eyebrow eyebrow--light">{{ $framework.eyebrow }}</p>
+    <h2 class="section-title section-title--light">{{ $framework.heading }}</h2>
+    <p class="body-lg body-lg--light">{{ $framework.body }}</p>
+    <div class="framework__grid">
+      {{ range $framework.list }}
+      <div class="framework-card reveal">
+        <span class="framework-card__num" aria-hidden="true"></span>
         <h3>{{ .name }}</h3>
         <p>{{ .description }}</p>
       </div>
@@ -70,16 +80,23 @@
 <section class="legacy">
   <div class="legacy__inner reveal">
     <blockquote>&ldquo;{{ $legacy.quote }}&rdquo;</blockquote>
-    <cite>&mdash; {{ $legacy.attribution }}</cite>
+    <cite>{{ $legacy.attribution }}</cite>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="contact__inner reveal">
-    <p class="eyebrow eyebrow--center">{{ $contact.eyebrow }}</p>
-    <h2 class="section-title section-title--center">{{ $contact.heading }}</h2>
-    <p class="body-lg body-lg--center">{{ $contact.body }}</p>
-    <a class="btn btn--outline" href="mailto:{{ $contact.email }}">{{ $contact.email }}</a>
+<section class="assessment" id="assessment">
+  <div class="sprig" aria-hidden="true"><svg width="26" height="52"><use href="#icon-fern"/></svg></div>
+  <div class="assessment__inner reveal">
+    <p class="eyebrow eyebrow--center">{{ $assessment.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $assessment.heading }}</h2>
+    <p class="body-lg body-lg--center">{{ $assessment.body }}</p>
+    <p class="assessment__note">{{ $assessment.note }}</p>
+    <div class="assessment__actions">
+      <a class="btn btn--gold" href="tel:{{ $assessment.phone_tel }}">{{ $assessment.call_label }}</a>
+      <a class="btn btn--outline" href="sms:{{ $assessment.phone_sms }}">{{ $assessment.text_label }}</a>
+    </div>
+    <p class="assessment__phone">{{ $assessment.phone_display }}</p>
+    <p class="assessment__email"><a href="mailto:{{ $assessment.email }}">{{ $assessment.email }}</a></p>
   </div>
 </section>
 {{ end }}
