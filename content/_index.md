@@ -32,8 +32,8 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
 
 [[pillars]]
   word = "Waiwai"
-  translation = "Prosperity"
-  body = "Abundance, defined broadly: in resources, in relationships, and in the freedom to choose the path ahead."
+  translation = "Wealth"
+  body = "Value, defined broadly: in resources, in relationships, and in the freedom to choose the path ahead."
 
 [framework]
   eyebrow = "Our Framework"
