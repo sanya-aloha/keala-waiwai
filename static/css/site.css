@@ -802,6 +802,14 @@ button:focus-visible {
   color: var(--color-gold-light);
 }
 
+.site-footer__address {
+  font-style: normal;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-text-on-ink-muted);
+  text-align: right;
+}
+
 .site-footer__fine {
   width: 100%;
   font-size: 0.78rem;

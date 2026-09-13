@@ -5,9 +5,11 @@ enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term', 'rss']
 
 [params]
-  description = 'Keala Waiwai: private family office structuring, built on legacy, stewardship, and prosperity.'
+  description = 'Keala Waiwai: private consulting and management for family enterprises, built on legacy, stewardship, and prosperity.'
   tagline = 'The Path of Prosperity'
   ogImage = '/images/hero-leaves.webp'
+  addressLine1 = '249 Central Park Ave, Ste 300-232'
+  addressLine2 = 'Virginia Beach, VA 23462'
 
 [[menu.main]]
   name = 'Story'
@@ -25,7 +27,7 @@ disableKinds = ['taxonomy', 'term', 'rss']
   weight = 30
 
 [[menu.main]]
-  name = 'Assessment'
+  name = 'Consultation'
   url = '/#assessment'
   weight = 40
 

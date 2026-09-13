@@ -1,12 +1,12 @@
 +++
 title = 'Keala Waiwai'
-description = 'Keala Waiwai: private family office structuring, built on legacy, stewardship, and prosperity.'
+description = 'Keala Waiwai: private consulting and management for family enterprises, built on legacy, stewardship, and prosperity.'
 
 [hero]
   eyebrow = "Keala Waiwai"
   headline = "The path of prosperity is walked, not inherited."
-  subhead = "A private family office practice for those ready to set the foundation before the wealth arrives, so it can protect what matters most."
-  cta_label = "Request Your Assessment"
+  subhead = "A private consulting and management practice for family enterprises, building the foundation before the wealth arrives, so it can protect what matters most."
+  cta_label = "Request Your Consultation"
   cta_href = "/#assessment"
 
 [story]
@@ -36,21 +36,21 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   body = "The reason for the work. Every structure we build exists to protect the people and relationships that matter, not wealth for its own sake."
 
 [framework]
-  eyebrow = "Our Framework"
-  heading = "Three parts. One coordinated structure."
-  body = "A family office is not one entity, it is a system. We structure each piece to work in coordination: one to govern and protect, one to operate and grow, one to hold and steward what has been built."
+  eyebrow = "Our Approach"
+  heading = "Three parts. One coordinated system."
+  body = "A family enterprise is not one entity, it is a system. We consult and manage each part in coordination: one to run operations, one to grow the business, one to plan for what comes next."
 
 [[framework.list]]
-  name = "Governance & Trust"
-  description = "The foundation that holds authority, protects assets, and carries decisions across generations."
+  name = "Operations & Oversight"
+  description = "The systems that keep day-to-day operations organized, accountable, and built to last."
 
 [[framework.list]]
   name = "Operating Ventures"
-  description = "The engine that generates income and puts the structure to work in the real world."
+  description = "The engine that generates income and puts the business to work in the real world."
 
 [[framework.list]]
-  name = "Growth & Stewardship"
-  description = "The layer that holds long-term value and directs how it grows and passes forward."
+  name = "Growth & Planning"
+  description = "The management layer that plans long-term value and directs how the business grows."
 
 [growth]
   quote = "What grows slowly, grows to last."
@@ -60,10 +60,10 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   attribution = "The way we build"
 
 [assessment]
-  eyebrow = "Private Assessment"
+  eyebrow = "Private Consultation"
   heading = "Where you are. Where you want to be."
-  body = "Before there is wealth to protect, there is a foundation to set. This is a private conversation to assess where you stand today, where you want your family to be, and what it will take to build that protection with intention, not urgency."
-  note = "This is reserved for those willing and able to take ownership of where they are and where they are going. If that is you, begin the conversation below."
+  body = "Before there is wealth to protect, there is a foundation to set. This is a private consultation to review where your business stands today, where you want it to be, and what management and structure it will take to get there, built with intention, not urgency."
+  note = "This is a limited engagement, reserved for family enterprises ready to take ownership of where they are and where they are going. If that describes you, begin the conversation below."
   phone_display = "(757) 704-4904"
   phone_tel = "+17577044904"
   phone_sms = "+17577044904"
