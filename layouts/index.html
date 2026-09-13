@@ -91,8 +91,7 @@
     <p class="body-lg body-lg--center">{{ $assessment.body }}</p>
     <p class="assessment__note">{{ $assessment.note }}</p>
     <div class="assessment__actions">
-      <a class="btn btn--gold" href="tel:{{ $assessment.phone_tel }}">{{ $assessment.call_label }}</a>
-      <a class="btn btn--outline" href="sms:{{ $assessment.phone_sms }}">{{ $assessment.text_label }}</a>
+      <a class="btn btn--gold" href="sms:{{ $assessment.phone_sms }}">{{ $assessment.text_label }}</a>
     </div>
     <p class="assessment__phone">{{ $assessment.phone_display }}</p>
     <p class="assessment__email"><a href="mailto:{{ $assessment.email }}">{{ $assessment.email }}</a></p>

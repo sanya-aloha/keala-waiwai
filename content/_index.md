@@ -65,9 +65,7 @@ description = 'Keala Waiwai: private consulting and management for family enterp
   body = "Before there is wealth to protect, there is a foundation to set. This is a private consultation to review where your business stands today, where you want it to be, and what management and structure it will take to get there, built with intention, not urgency."
   note = "This is a limited engagement, reserved for family enterprises ready to take ownership of where they are and where they are going. If that describes you, begin the conversation below."
   phone_display = "(757) 704-4904"
-  phone_tel = "+17577044904"
   phone_sms = "+17577044904"
-  call_label = "Call to Begin"
   text_label = "Text to Begin"
   email = "info@kealawaiwai.com"
 +++
