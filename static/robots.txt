@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://keala-waiwai.pages.dev/sitemap.xml

@@ -1,0 +1,16 @@
+baseURL = 'https://keala-waiwai.pages.dev/'
+languageCode = 'en-us'
+title = 'Keala Waiwai'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term', 'rss']
+
+[params]
+  description = 'Keala Waiwai'
+
+[minify]
+  minifyOutput = false
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  page = ['HTML']
