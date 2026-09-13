@@ -1,3 +1,33 @@
-<header class="site-header">
-  <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }} home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1"/>
+          <path d="M14 32c3-6 3-12 0-18M24 32c3-8 3-10 0-18M34 32c3-6 3-12 0-18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__word">{{ .Site.Title }}</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
 </header>

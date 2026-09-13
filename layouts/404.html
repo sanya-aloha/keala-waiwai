@@ -1,6 +1,10 @@
 {{ define "main" }}
-<section>
-  <h1>Page not found</h1>
-  <p><a href="{{ "/" | relURL }}">Back to the homepage</a></p>
+<section class="page page--center">
+  <div class="page__inner reveal">
+    <p class="eyebrow eyebrow--center">404</p>
+    <h1 class="section-title--center">This path hasn&rsquo;t been cleared yet.</h1>
+    <p class="body-lg body-lg--center">The page you&rsquo;re looking for doesn&rsquo;t exist.</p>
+    <a class="btn btn--outline" href="{{ "/" | relURL }}">Back to the homepage</a>
+  </div>
 </section>
 {{ end }}

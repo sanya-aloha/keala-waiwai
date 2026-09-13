@@ -1,9 +1,18 @@
 {{ define "main" }}
-<section>
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-  {{ end }}
+<section class="page">
+  <div class="page__inner reveal">
+    <p class="eyebrow"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></p>
+    <h1>{{ .Title }}</h1>
+    <div class="page__content">
+      {{ .Content }}
+    </div>
+    {{ if .Pages }}
+    <ul class="page__list">
+      {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
 </section>
 {{ end }}

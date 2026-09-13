@@ -1,6 +1,85 @@
 {{ define "main" }}
+{{ $hero := .Params.hero }}
+{{ $story := .Params.story }}
+{{ $pillars := .Params.pillars }}
+{{ $ventures := .Params.ventures }}
+{{ $legacy := .Params.legacy }}
+{{ $contact := .Params.contact }}
+
 <section class="hero">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="hero__inner reveal">
+    <p class="eyebrow eyebrow--light">{{ $hero.eyebrow }}</p>
+    <h1 class="hero__headline">{{ $hero.headline }}</h1>
+    <p class="hero__subhead">{{ $hero.subhead }}</p>
+    <a class="btn btn--gold" href="{{ $hero.cta_href }}">{{ $hero.cta_label }}</a>
+  </div>
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg)"/>
+    </svg>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story__inner">
+    <div class="story__text reveal">
+      <p class="eyebrow">{{ $story.eyebrow }}</p>
+      <h2>{{ $story.heading }}</h2>
+      <p class="body-lg">{{ $story.body }}</p>
+    </div>
+    <div class="story__quote reveal">
+      <blockquote>&ldquo;{{ $story.quote }}&rdquo;</blockquote>
+      <span class="rule-gold" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" id="pillars">
+  <div class="pillars__inner">
+    <p class="eyebrow eyebrow--center">Our Foundation</p>
+    <h2 class="section-title section-title--center">Four values. One path.</h2>
+    <div class="pillars__grid">
+      {{ range $pillars }}
+      <div class="pillar-card reveal">
+        <p class="pillar-card__word">{{ .word }}</p>
+        <p class="pillar-card__translation">{{ .translation }}</p>
+        <p class="pillar-card__body">{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="ventures" id="ventures">
+  <div class="ventures__inner">
+    <p class="eyebrow eyebrow--light">{{ $ventures.eyebrow }}</p>
+    <h2 class="section-title section-title--light">{{ $ventures.heading }}</h2>
+    <p class="body-lg body-lg--light">{{ $ventures.body }}</p>
+    <div class="ventures__grid">
+      {{ range $ventures.list }}
+      <div class="venture-card reveal">
+        <span class="venture-card__num" aria-hidden="true"></span>
+        <h3>{{ .name }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="legacy">
+  <div class="legacy__inner reveal">
+    <blockquote>&ldquo;{{ $legacy.quote }}&rdquo;</blockquote>
+    <cite>&mdash; {{ $legacy.attribution }}</cite>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact__inner reveal">
+    <p class="eyebrow eyebrow--center">{{ $contact.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $contact.heading }}</h2>
+    <p class="body-lg body-lg--center">{{ $contact.body }}</p>
+    <a class="btn btn--outline" href="mailto:{{ $contact.email }}">{{ $contact.email }}</a>
+  </div>
 </section>
 {{ end }}

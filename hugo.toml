@@ -1,11 +1,33 @@
-baseURL = 'https://keala-waiwai.pages.dev/'
+baseURL = 'https://kealawaiwai.com/'
 languageCode = 'en-us'
 title = 'Keala Waiwai'
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term', 'rss']
 
 [params]
-  description = 'Keala Waiwai'
+  description = 'Keala Waiwai — a family enterprise built on legacy, stewardship, and prosperity.'
+  tagline = 'The Path of Prosperity'
+  ogImage = '/images/og-cover.svg'
+
+[[menu.main]]
+  name = 'Story'
+  url = '/#story'
+  weight = 10
+
+[[menu.main]]
+  name = 'Pillars'
+  url = '/#pillars'
+  weight = 20
+
+[[menu.main]]
+  name = 'Ventures'
+  url = '/#ventures'
+  weight = 30
+
+[[menu.main]]
+  name = 'Contact'
+  url = '/#contact'
+  weight = 40
 
 [minify]
   minifyOutput = false
