@@ -3,16 +3,11 @@
 {{ $story := .Params.story }}
 {{ $pillars := .Params.pillars }}
 {{ $framework := .Params.framework }}
+{{ $growth := .Params.growth }}
 {{ $legacy := .Params.legacy }}
 {{ $assessment := .Params.assessment }}
 
 <section class="hero">
-  <div class="hero__botanical hero__botanical--fern" aria-hidden="true">
-    <svg width="220" height="460"><use href="#icon-fern"/></svg>
-  </div>
-  <div class="hero__botanical hero__botanical--kalo" aria-hidden="true">
-    <svg width="180" height="220"><use href="#icon-kalo"/></svg>
-  </div>
   <div class="hero__inner reveal">
     <p class="eyebrow eyebrow--light">{{ $hero.eyebrow }}</p>
     <h1 class="hero__headline">{{ $hero.headline }}</h1>
@@ -58,9 +53,6 @@
 </section>
 
 <section class="framework" id="framework">
-  <div class="framework__botanical" aria-hidden="true">
-    <svg width="150" height="180"><use href="#icon-lauhala"/></svg>
-  </div>
   <div class="framework__inner">
     <p class="eyebrow eyebrow--light">{{ $framework.eyebrow }}</p>
     <h2 class="section-title section-title--light">{{ $framework.heading }}</h2>
@@ -74,6 +66,13 @@
       </div>
       {{ end }}
     </div>
+  </div>
+</section>
+
+<section class="growth" style="background-image: url('{{ "images/card-foliage.webp" | relURL }}')">
+  <div class="growth__caption reveal">
+    <span class="rule-gold" aria-hidden="true"></span>
+    <p>{{ $growth.quote }}</p>
   </div>
 </section>
 

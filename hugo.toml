@@ -7,7 +7,7 @@ disableKinds = ['taxonomy', 'term', 'rss']
 [params]
   description = 'Keala Waiwai: private family office structuring, built on legacy, stewardship, and prosperity.'
   tagline = 'The Path of Prosperity'
-  ogImage = '/images/og-cover.svg'
+  ogImage = '/images/hero-leaves.webp'
 
 [[menu.main]]
   name = 'Story'

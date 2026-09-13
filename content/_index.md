@@ -52,6 +52,9 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   name = "Growth & Stewardship"
   description = "The layer that holds long-term value and directs how it grows and passes forward."
 
+[growth]
+  quote = "What grows slowly, grows to last."
+
 [legacy]
   quote = "Waiwai nui ka pono (great is the value of righteousness)."
   attribution = "Traditional Hawaiian proverb"
@@ -61,10 +64,10 @@ description = 'Keala Waiwai: private family office structuring, built on legacy,
   heading = "Where you are. Where you want to be."
   body = "Before there is wealth to protect, there is a foundation to set. This is a private conversation to assess where you stand today, where you want your family to be, and what it will take to build that protection with intention, not urgency."
   note = "This is reserved for those willing and able to take ownership of where they are and where they are going. If that is you, begin the conversation below."
-  phone_display = "(757) 570-4995"
-  phone_tel = "+17575704995"
-  phone_sms = "+17575704995"
+  phone_display = "(757) 704-4904"
+  phone_tel = "+17577044904"
+  phone_sms = "+17577044904"
   call_label = "Call to Begin"
   text_label = "Text to Begin"
-  email = "aloha@kealawaiwai.com"
+  email = "info@kealawaiwai.com"
 +++
