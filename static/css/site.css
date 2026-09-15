@@ -594,6 +594,7 @@ button:focus-visible {
 .growth {
   position: relative;
   height: 380px;
+  margin: 5rem 0;
   background-size: cover;
   background-position: center 30%;
   display: flex;
