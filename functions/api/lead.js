@@ -1,5 +1,5 @@
 /**
- * Keala Waiwai — lead intake (Cloudflare Pages Function)
+ * Keala Waiwai lead intake (Cloudflare Pages Function)
  * Receives the site's contact form and upserts a contact into GHL.
  * The GHL token lives ONLY here, as a Cloudflare env secret (GHL_TOKEN).
  * Never expose it client-side.
