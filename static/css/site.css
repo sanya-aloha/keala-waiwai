@@ -589,53 +589,6 @@ button:focus-visible {
   margin-bottom: 1rem;
 }
 
-/* ---------- Growth image band ---------- */
-
-.growth {
-  position: relative;
-  height: 380px;
-  margin: 5rem 0;
-  background-size: cover;
-  background-position: center 30%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.growth::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(20, 32, 27, 0.88), rgba(20, 32, 27, 0.05) 55%);
-}
-
-.growth__caption {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.5rem 2.5rem;
-}
-
-.growth__caption .rule-gold {
-  margin: 0 0 1rem;
-}
-
-.growth__caption p {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
-  color: var(--color-text-on-ink);
-  margin: 0;
-  max-width: 440px;
-}
-
-@media (max-width: 700px) {
-  .growth {
-    height: 300px;
-  }
-}
-
 /* ---------- Legacy quote band ---------- */
 
 .legacy {

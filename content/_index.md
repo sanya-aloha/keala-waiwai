@@ -52,9 +52,6 @@ description = 'Keala Waiwai: private consulting and management for family enterp
   name = "Growth & Planning"
   description = "The management layer that plans long-term value and directs how the business grows."
 
-[growth]
-  quote = "What grows slowly, grows to last."
-
 [legacy]
   quote = "Hana pono (to act rightly, in good faith)."
   attribution = "The way we build"

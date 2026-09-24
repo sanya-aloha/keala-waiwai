@@ -3,7 +3,6 @@
 {{ $story := .Params.story }}
 {{ $pillars := .Params.pillars }}
 {{ $framework := .Params.framework }}
-{{ $growth := .Params.growth }}
 {{ $legacy := .Params.legacy }}
 {{ $assessment := .Params.assessment }}
 
@@ -66,13 +65,6 @@
       </div>
       {{ end }}
     </div>
-  </div>
-</section>
-
-<section class="growth" style="background-image: url('{{ "images/card-foliage.webp" | relURL }}')">
-  <div class="growth__caption reveal">
-    <span class="rule-gold" aria-hidden="true"></span>
-    <p>{{ $growth.quote }}</p>
   </div>
 </section>
 
