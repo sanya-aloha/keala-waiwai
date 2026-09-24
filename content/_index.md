@@ -61,8 +61,7 @@ description = 'Keala Waiwai: private consulting and management for family enterp
   heading = "Where you are. Where you want to be."
   body = "Before there is wealth to protect, there is a foundation to set. This is a private consultation to review where your business stands today, where you want it to be, and what management and structure it will take to get there, built with intention, not urgency."
   note = "This is a limited engagement, reserved for family enterprises ready to take ownership of where they are and where they are going. If that describes you, begin the conversation below."
-  phone_display = "(757) 704-4904"
-  phone_sms = "+17577044904"
-  text_label = "Text to Begin"
-  email = "info@kealawaiwai.com"
+  form_cta_label = "Begin the Conversation"
+  form_success = "Received. We will be in touch soon."
+  form_error = "Something went wrong. Please try again."
 +++

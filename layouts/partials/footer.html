@@ -17,7 +17,8 @@
 
     <address class="site-footer__address">
       {{ .Site.Params.addressLine1 }}<br>
-      {{ .Site.Params.addressLine2 }}
+      {{ .Site.Params.addressLine2 }}<br>
+      <a href="tel:{{ .Site.Params.phoneTel }}">{{ .Site.Params.phoneDisplay }}</a>
     </address>
 
     <p class="site-footer__fine">&copy; {{ now.Year }} Keala Waiwai Partners. All rights reserved. Managed by U'ila Mana Management.</p>

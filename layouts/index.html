@@ -82,10 +82,26 @@
     <h2 class="section-title section-title--center">{{ $assessment.heading }}</h2>
     <p class="body-lg body-lg--center">{{ $assessment.body }}</p>
     <p class="assessment__note">{{ $assessment.note }}</p>
-    <div class="assessment__actions">
-      <a class="btn btn--gold" href="sms:{{ $assessment.phone_sms }}">{{ $assessment.text_label }}</a>
-    </div>
-    <p class="assessment__phone">{{ $assessment.phone_display }}</p>
+    <form class="assessment__form" id="lead-form" novalidate data-success="{{ $assessment.form_success }}" data-error="{{ $assessment.form_error }}">
+      <div class="assessment__form-row">
+        <label for="lead-name" class="sr-only">Name</label>
+        <input type="text" id="lead-name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="assessment__form-row assessment__form-row--split">
+        <div>
+          <label for="lead-email" class="sr-only">Email</label>
+          <input type="email" id="lead-email" name="email" placeholder="Email">
+        </div>
+        <div>
+          <label for="lead-phone" class="sr-only">Phone</label>
+          <input type="tel" id="lead-phone" name="phone" placeholder="Phone">
+        </div>
+      </div>
+      <p class="assessment__form-hint">Please provide at least an email or a phone number.</p>
+      <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn btn--gold">{{ $assessment.form_cta_label }}</button>
+      <p class="assessment__form-status" role="status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
 {{ end }}

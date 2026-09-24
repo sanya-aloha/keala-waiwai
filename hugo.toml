@@ -10,6 +10,8 @@ disableKinds = ['taxonomy', 'term', 'rss']
   ogImage = '/images/hero-leaves.webp'
   addressLine1 = '249 Central Park Ave, Ste 300-232'
   addressLine2 = 'Virginia Beach, VA 23462'
+  phoneDisplay = '(757) 704-4904'
+  phoneTel = '+17577044904'
 
 [[menu.main]]
   name = 'Story'
