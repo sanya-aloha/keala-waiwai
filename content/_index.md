@@ -64,4 +64,5 @@ description = 'Keala Waiwai: private consulting and management for family enterp
   form_cta_label = "Begin the Conversation"
   form_success = "Received. We will be in touch soon."
   form_error = "Something went wrong. Please try again."
+  email = "info@kealawaiwai.com"
 +++

@@ -82,6 +82,13 @@
     <h2 class="section-title section-title--center">{{ $assessment.heading }}</h2>
     <p class="body-lg body-lg--center">{{ $assessment.body }}</p>
     <p class="assessment__note">{{ $assessment.note }}</p>
+    <a class="btn btn--gold" href="mailto:{{ $assessment.email }}">Email Us</a>
+    {{/*
+    Lead-capture form temporarily hidden 2026-09-27: the GHL-side workflow
+    that's supposed to fire off this form's contacts isn't reliable yet.
+    The form itself and functions/api/lead.js still work correctly, this
+    is only hidden pending the GHL automation getting fixed. Restore by
+    uncommenting this block and removing the mailto fallback above.
     <form class="assessment__form" id="lead-form" novalidate data-success="{{ $assessment.form_success }}" data-error="{{ $assessment.form_error }}">
       <div class="assessment__form-row">
         <label for="lead-name" class="sr-only">Name</label>
@@ -102,6 +109,7 @@
       <button type="submit" class="btn btn--gold">{{ $assessment.form_cta_label }}</button>
       <p class="assessment__form-status" role="status" aria-live="polite"></p>
     </form>
+    */}}
   </div>
 </section>
 {{ end }}
