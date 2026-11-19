@@ -12,7 +12,7 @@ description = 'Keala Waiwai: private consulting and management for family enterp
 [story]
   eyebrow = "Our Story"
   heading = "Keala means the path. Waiwai means wealth."
-  body = "Keala Waiwai was founded on a simple belief: wealth is not only what is gathered, but what is stewarded and passed forward. Every structure we build is disciplined in practice, built to outlast any one generation."
+  body = "Keala Waiwai was founded on a simple belief: true wealth is whole. It is the health of the body, the clarity of the mind, the strength of the ʻohana (family), and the care of the land, held together by structure that lasts. We build in alignment with nature, disciplined in practice, made to outlast any one generation."
   quote = "We are not building for a season. We are building for the ones who come after us."
 
 [[pillars]]
