@@ -1,0 +1,100 @@
+{{ define "main" }}
+{{ $hero := .Params.hero }}
+{{ $mission := .Params.mission }}
+{{ $vision := .Params.vision }}
+{{ $kuleana := .Params.kuleana }}
+{{ $kaiaulu := .Params.kaiaulu }}
+{{ $onipaa := .Params.onipaa }}
+
+<section class="hero hero--page">
+  <div class="hero__inner reveal">
+    <p class="eyebrow eyebrow--light">{{ $hero.eyebrow }}</p>
+    <h1 class="hero__headline hero__headline--page">{{ .Title }}</h1>
+    <p class="hero__subhead">{{ $hero.intro }}</p>
+  </div>
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg)"/>
+    </svg>
+  </div>
+</section>
+
+<section class="story">
+  <div class="story__inner">
+    <div class="story__text reveal">
+      <p class="eyebrow">{{ $mission.eyebrow }}</p>
+      <h2>{{ $mission.heading }}</h2>
+      <p class="body-lg">{{ $mission.body }}</p>
+    </div>
+    <div class="story__quote reveal">
+      <blockquote>{{ $mission.values }}</blockquote>
+      <p class="story__quote-note">{{ $mission.values_note }}</p>
+      <span class="rule-gold" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="pillars__inner">
+    <div class="sprig" aria-hidden="true"><svg width="26" height="52"><use href="#icon-fern"/></svg></div>
+    <p class="eyebrow eyebrow--center">{{ $vision.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $vision.heading }}</h2>
+    <p class="body-lg body-lg--center">{{ $vision.body }}</p>
+    <div class="pillars__grid pillars__grid--three">
+      {{ range $vision.list }}
+      <div class="pillar-card reveal">
+        <p class="pillar-card__word">{{ .name }}</p>
+        <p class="pillar-card__body">{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="framework">
+  <div class="framework__inner">
+    <p class="eyebrow eyebrow--light">{{ $kuleana.eyebrow }}</p>
+    <h2 class="section-title section-title--light">{{ $kuleana.heading }}</h2>
+    <p class="body-lg body-lg--light">{{ $kuleana.body }}</p>
+    <div class="framework__grid">
+      {{ range $kuleana.list }}
+      <div class="framework-card reveal">
+        <span class="framework-card__num" aria-hidden="true"></span>
+        <h3>{{ .name }}</h3>
+        <p>{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="pillars pillars--plain">
+  <div class="pillars__inner">
+    <p class="eyebrow eyebrow--center">{{ $kaiaulu.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $kaiaulu.heading }}</h2>
+    <p class="body-lg body-lg--center">{{ $kaiaulu.body }}</p>
+    <div class="pillars__grid pillars__grid--three">
+      {{ range $kaiaulu.list }}
+      <div class="pillar-card reveal">
+        <p class="pillar-card__word">{{ .name }}</p>
+        <p class="pillar-card__body">{{ .body }}</p>
+        <ul class="pillar-card__list">
+          {{ range .items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="assessment">
+  <div class="sprig" aria-hidden="true"><svg width="26" height="52"><use href="#icon-fern"/></svg></div>
+  <div class="assessment__inner reveal">
+    <p class="eyebrow eyebrow--center">{{ $onipaa.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $onipaa.heading }}</h2>
+    <p class="body-lg body-lg--center">{{ $onipaa.body }}</p>
+    <p class="assessment__note">{{ $onipaa.note }}</p>
+    <a class="btn btn--gold" href="mailto:{{ $onipaa.email }}">{{ $onipaa.cta_label }}</a>
+  </div>
+</section>
+{{ end }}
