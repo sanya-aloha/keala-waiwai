@@ -725,6 +725,47 @@ button:focus-visible {
   }
 }
 
+/* ---------- Subpage variants (e.g. U'ila Mana Management) ---------- */
+
+.hero--page {
+  padding: 6rem 1.5rem 8rem;
+}
+
+.hero__headline--page {
+  font-style: normal;
+}
+
+.pillars--plain {
+  background: var(--color-bg);
+}
+
+.pillars__grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .pillars__grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+.framework__inner--narrow {
+  max-width: 760px;
+}
+
+.framework__inner--narrow .body-lg {
+  margin-bottom: 2rem;
+}
+
+.rep__title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin: -0.5rem 0 1.5rem;
+}
+
 /* ---------- Generic page (single/list/404) ---------- */
 
 .page {
@@ -835,4 +876,15 @@ button:focus-visible {
   margin: 0;
   border-top: 1px solid var(--color-border-on-ink);
   padding-top: 1.5rem;
+}
+
+.site-footer__fine a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition);
+}
+
+.site-footer__fine a:hover {
+  color: var(--color-gold-light);
 }

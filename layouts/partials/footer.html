@@ -21,7 +21,7 @@
       <a href="tel:{{ .Site.Params.phoneTel }}">{{ .Site.Params.phoneDisplay }}</a>
     </address>
 
-    <p class="site-footer__fine">&copy; {{ now.Year }} Keala Waiwai Partners. All rights reserved. Managed by U'ila Mana Management.</p>
+    <p class="site-footer__fine">&copy; {{ now.Year }} Keala Waiwai Partners. All rights reserved. Managed by <a href="{{ "uila-mana-management/" | relURL }}">U'ila Mana Management</a>.</p>
   </div>
 </footer>
 <script src="{{ "js/site.js" | relURL }}?v={{ now.Unix }}" defer></script>

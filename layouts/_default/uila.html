@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ $hero := .Params.hero }}
+{{ $handles := .Params.handles }}
+{{ $fits := .Params.fits }}
+{{ $rep := .Params.representative }}
+
+<section class="hero hero--page">
+  <div class="hero__inner reveal">
+    <p class="eyebrow eyebrow--light">{{ $hero.eyebrow }}</p>
+    <h1 class="hero__headline hero__headline--page">{{ .Title }}</h1>
+    <p class="hero__subhead">{{ $hero.intro }}</p>
+  </div>
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg)"/>
+    </svg>
+  </div>
+</section>
+
+<section class="pillars pillars--plain">
+  <div class="pillars__inner">
+    <div class="sprig" aria-hidden="true"><svg width="26" height="52"><use href="#icon-fern"/></svg></div>
+    <p class="eyebrow eyebrow--center">{{ $handles.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $handles.heading }}</h2>
+    <div class="pillars__grid pillars__grid--three">
+      {{ range $handles.list }}
+      <div class="pillar-card reveal">
+        <p class="pillar-card__word">{{ .name }}</p>
+        <p class="pillar-card__body">{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="framework">
+  <div class="framework__inner framework__inner--narrow reveal">
+    <p class="eyebrow eyebrow--light">{{ $fits.eyebrow }}</p>
+    <h2 class="section-title section-title--light">{{ $fits.heading }}</h2>
+    <p class="body-lg body-lg--light">{{ $fits.body }}</p>
+    <a class="btn btn--gold" href="{{ "/#framework" | relURL }}">{{ $fits.link_label }}</a>
+  </div>
+</section>
+
+<section class="assessment">
+  <div class="assessment__inner reveal">
+    <p class="eyebrow eyebrow--center">{{ $rep.eyebrow }}</p>
+    <h2 class="section-title section-title--center">{{ $rep.name }}</h2>
+    <p class="rep__title">{{ $rep.title }}</p>
+    <p class="body-lg body-lg--center">{{ $rep.note }}</p>
+    <a class="btn btn--gold" href="mailto:{{ $rep.email }}">{{ $rep.email }}</a>
+  </div>
+</section>
+{{ end }}
